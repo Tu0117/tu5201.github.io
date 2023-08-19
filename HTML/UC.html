@@ -53,13 +53,13 @@
             btn.style.borderRadius = settings.button.borderRadius + "px";
         }
         btn.addEventListener("click", function () {
-            // 隐藏按钮
+            // 隐藏
             btn.style.display = "none";
-            // 播放音乐
+            // 播放
             music.play();
             // 配置绑定
 
-            // 图片配置绑定
+            // 配置绑定
             if (settings.image.src != "") {
                 let img = document.createElement("img");
                 img.src = "./圖片/" + settings.image.src;
@@ -76,7 +76,7 @@
             if (settings.bg.color != "") {
                 document.body.style.backgroundColor = settings.bg.color;
             }
-            // 音乐配置绑定
+            // 音樂配置绑定
             if (settings.music.src != "") {
                 music.loop = true;
                 music.play();
@@ -96,7 +96,7 @@
                 div.style.top = settings.text.top;
                 document.body.appendChild(div);
             }
-            // 渲染爱心
+            // 渲染愛心
             (function () { var b = 0; var c = ["ms", "moz", "webkit", "o"]; for (var a = 0; a < c.length && !window.requestAnimationFrame; ++a) { window.requestAnimationFrame = window[c[a] + "RequestAnimationFrame"]; window.cancelAnimationFrame = window[c[a] + "CancelAnimationFrame"] || window[c[a] + "CancelRequestAnimationFrame"] } if (!window.requestAnimationFrame) { window.requestAnimationFrame = function (h, e) { var d = new Date().getTime(); var f = Math.max(0, 16 - (d - b)); var g = window.setTimeout(function () { h(d + f) }, f); b = d + f; return g } } if (!window.cancelAnimationFrame) { window.cancelAnimationFrame = function (d) { clearTimeout(d) } } }());
             var Point = (function () {
                 function Point(x, y) {
