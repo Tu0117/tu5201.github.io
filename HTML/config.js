@@ -57,7 +57,7 @@ var settings = {
     // 图片配置
     image: {
         // 图片放在image文件夹下，然后写图片名比如 xxx.png
-        src: "ABC",
+        src: "ABC.jpg",
         // 图片宽度
         width: "100",
         // 图片高度
